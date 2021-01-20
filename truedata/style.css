@@ -1,0 +1,144 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    background-color: #181818;
+}
+
+/* ..................................................... */
+.TextGlitch, .Slash {
+    position: relative;
+    color: #fff;
+    line-height: 1em;
+    font-size: 96px;
+    font-family: "Major Mono Display", monospace;
+}
+
+.TextGlitch-clip {
+    position: relative;
+}
+.TextGlitch-clip + .TextGlitch-clip {
+    position: absolute;
+    top: 0;
+}
+.TextGlitch:not( .TextGlitch-blended ) .TextGlitch-clip + .TextGlitch-clip {
+    display: none;
+}
+
+.TextGlitch-word {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.TextGlitch-blend {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .15s;
+    transition-property: opacity;
+}
+.TextGlitch-blendA {
+    color: #2af;
+    margin: -.03em 0 0 .03em;
+    mix-blend-mode: darken;
+}
+.TextGlitch-blendB {
+    color: #f64;
+    margin: .03em 0 0 -.03em;
+    mix-blend-mode: color-burn;
+}
+.TextGlitch-blended .TextGlitch-blend {
+    opacity: .4;
+}
+
+/*...\\...*/
+
+.Header .ForSale {
+  font-family: "Major Mono Display";
+  font-size: 0.75em;
+  width: 50vw;
+  color: #eeeeff;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.Header .Signature {
+  font-family: "Major Mono Display";
+  font-size: 1.5em;
+  color: #eeeeff;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+/*\\..|..\\*/
+
+a:link {
+  color: #eeeeff;
+  opacity: 35%;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #eeeeff;
+  opacity: 35%;
+  text-decoration: underline;
+}
+
+a:hover {
+  opacity: 100%;
+  text-decoration: none;
+}
+
+a:active {
+  opacity: 100%;
+  text-decoration: none;
+}
+
+/**/
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 400%;
+  height: 200vh;
+  background: transparent url('noise.png');
+  animation: bg-animation .2s infinite;
+  opacity: .9;
+  visibility: visible;
+}
+
+@keyframes bg-animation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-5%,-5%) }
+    20% { transform: translate(-10%,5%) }
+    30% { transform: translate(5%,-10%) }
+    40% { transform: translate(-5%,15%) }
+    50% { transform: translate(-10%,5%) }
+    60% { transform: translate(15%,0) }
+    70% { transform: translate(0,10%) }
+    80% { transform: translate(-15%,0) }
+    90% { transform: translate(10%,5%) }
+    100% { transform: translate(5%,0) }
+}
+
+@media only screen and (max-width: 640px) {
+    .Header .ForSale {
+        font-size: 3.25vw;
+    }
+    .Header .Signature {
+        font-size: 4.75vw;
+    }
+    .TextGlitch, .Slash {
+        font-size: 10vw;
+    }
+}

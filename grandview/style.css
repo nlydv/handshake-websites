@@ -1,0 +1,93 @@
+html,
+body {
+    height: 100%;
+	width: 100%;
+    background-color: floralwhite;
+}
+body {
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+.Header .ForSale {
+  font-family: "Major Mono Display";
+  font-size: 0.75em;
+  width: 50vw;
+  color: #000000;
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.Header .Signature {
+  font-family: "Major Mono Display";
+  font-size: 1.5em;
+  color: #000000;
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+/*\\..|..\\*/
+
+a:link {
+  color: black;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+/**/
+
+.path {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation: dash 15s linear forwards;
+  Animation-delay: 2s;
+  width: 50vw;
+  position: fixed;
+  align-self: center;
+}
+
+@keyframes dash {
+  4% {
+    stroke-dashoffset: 9800;
+  }
+  6% {
+    stroke-dashoffset: 9100;
+  }
+  20% {
+    stroke-dashoffset: 7000;
+  }
+  50% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+    .Header .ForSale {
+        font-size: 3.25vw;
+    }
+    .Header .Signature {
+        font-size: 4.75vw;
+    }
+}
