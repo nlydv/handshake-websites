@@ -18,6 +18,6 @@ I am currently playing with self-hosting a nameserver and DIY managing DNS recor
 Currently I am able to send & recieve emails from my Handshake domain, `neel/`, at the address `yadav@neel`.
 The proof-of-concept test for email usage on HNS domains was succesfully demonstrated for the first time ever between two indpendent mail servers behind HNS domains (as far as we know) in early February 2021. An image of the exchange between me (yadav@neel) and Sebastian Rasor (sebastian@rasor) below:
 
-![First email exchange between two handshake domains](https://files.neelyadav.com/handshake/HNS_FirstEmailEver.png)
+![First email exchange between two handshake domains](https://files.neelyadav.com/handshake/firstEmail_1.png)
 
 If you already have your own email server working on a HNS domain, send me some mail! It's quite lonely out here. Still working out the proper modifications to make it indistinguishably as functional as regular DNS domain emails, at least when it comes to emails purely between domains within the Handshake root zone.
