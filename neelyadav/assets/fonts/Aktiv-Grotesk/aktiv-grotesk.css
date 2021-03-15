@@ -1,0 +1,107 @@
+ // Aktiv Grotesk \\
+//–––––––––––––––––\\
+
+@font-face {
+    font-family: "Aktiv Grotesk";
+    src: url("AktivGrotesk-Black.eot");
+    src: url("AktivGrotesk-Black.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-Black.woff2") format("woff2"),
+        url("AktivGrotesk-Black.woff") format("woff"),
+        url("AktivGrotesk-Black.ttf") format("truetype"),
+        url("AktivGrotesk-Black.svg#AktivGrotesk-Black") format("svg");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk Hair";
+    src: url("AktivGrotesk-Hair.eot");
+    src: url("AktivGrotesk-Hair.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-Hair.woff2") format("woff2"),
+        url("AktivGrotesk-Hair.woff") format("woff"),
+        url("AktivGrotesk-Hair.ttf") format("truetype"),
+        url("AktivGrotesk-Hair.svg#AktivGrotesk-Hair") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk";
+    src: url("AktivGrotesk-Bold.eot");
+    src: url("AktivGrotesk-Bold.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-Bold.woff2") format("woff2"),
+        url("AktivGrotesk-Bold.woff") format("woff"),
+        url("AktivGrotesk-Bold.ttf") format("truetype"),
+        url("AktivGrotesk-Bold.svg#AktivGrotesk-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk";
+    src: url("AktivGrotesk-Medium.eot");
+    src: url("AktivGrotesk-Medium.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-Medium.woff2") format("woff2"),
+        url("AktivGrotesk-Medium.woff") format("woff"),
+        url("AktivGrotesk-Medium.ttf") format("truetype"),
+        url("AktivGrotesk-Medium.svg#AktivGrotesk-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk";
+    src: url("AktivGrotesk-Light.eot");
+    src: url("AktivGrotesk-Light.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-Light.woff2") format("woff2"),
+        url("AktivGrotesk-Light.woff") format("woff"),
+        url("AktivGrotesk-Light.ttf") format("truetype"),
+        url("AktivGrotesk-Light.svg#AktivGrotesk-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk";
+    src: url("AktivGrotesk-Thin.eot");
+    src: url("AktivGrotesk-Thin.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-Thin.woff2") format("woff2"),
+        url("AktivGrotesk-Thin.woff") format("woff"),
+        url("AktivGrotesk-Thin.ttf") format("truetype"),
+        url("AktivGrotesk-Thin.svg#AktivGrotesk-Thin") format("svg");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk";
+    src: url("AktivGrotesk-Regular.eot");
+    src: url("AktivGrotesk-Regular.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-Regular.woff2") format("woff2"),
+        url("AktivGrotesk-Regular.woff") format("woff"),
+        url("AktivGrotesk-Regular.ttf") format("truetype"),
+        url("AktivGrotesk-Regular.svg#AktivGrotesk-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Aktiv Grotesk XBold";
+    src: url("AktivGrotesk-XBold.eot");
+    src: url("AktivGrotesk-XBold.eot?#iefix") format("embedded-opentype"),
+        url("AktivGrotesk-XBold.woff2") format("woff2"),
+        url("AktivGrotesk-XBold.woff") format("woff"),
+        url("AktivGrotesk-XBold.ttf") format("truetype"),
+        url("AktivGrotesk-XBold.svg#AktivGrotesk-XBold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

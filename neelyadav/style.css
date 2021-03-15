@@ -22,16 +22,17 @@ mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
 del{text-decoration:line-through}
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
-hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:0.5em;;padding:0}
 input,select{vertical-align:middle}
 
 #desktop {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: var(--sans-serif);
     position: fixed;
     height: 100%;
     width: 100%;
     background: #CCC;
-	overflow: hidden;
+	  overflow-x: hidden;
+    overflow-y: scroll;
     top: 0;
     bottom: 0;
     left: 0;
@@ -86,7 +87,7 @@ input,select{vertical-align:middle}
     margin-left: 1px;
     font-size: 14px;
     padding: 2px 10px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: var(--sans-serif);
     border-radius: 100px;
     line-height: 16px;
     width: 2px;
@@ -173,6 +174,7 @@ input,select{vertical-align:middle}
 	border-radius: 0 0 5px 5px;
 }
 .windowHeader > strong {
+    font-family: var(--sans-serif-display);
     float: left;
     margin: 0px 3px 0 10px;
     line-height: 29px;
@@ -194,7 +196,7 @@ input,select{vertical-align:middle}
 	background: #FFF;
 }
 .taskbarPanel.minimizedTab {
-	background: #AAA;	
+	background: #AAA;
 }
 .taskbarPanel.minimizedTab:hover {
 	background: #DDD;
@@ -230,45 +232,172 @@ input,select{vertical-align:middle}
 }
 
 /*Initial Window States*/
-#window0 {
-    top: 205px;
+#window2 {
+    top: 210px;
     left: 273px;
 }
 #window1 {
     top: 53px;
     left: 756px;
 }
-#window2 {
-    top: 73px;
+#window3 {
+    top: 78px;
     left: 383px;
 }
-#window3 {
-    top: 100px;
+#window0 {
+    top: 105px;
+    left: 300px;
+}
+#window4 {
+    top: 105px;
     left: 300px;
 }
 #window0 .wincontent {
-    width: 400px;
-    height: 300px;
+    width: 250px;
+    height: fit-content;
 }
 #window1 .wincontent {
     width: 250px;
-    height: 300px;
-}
-#window2 .wincontent {
-    width: 500px;
-    height: 400px;
+    height: fit-content;
 }
 #window3 .wincontent {
+    width: fit-content;
+    height: fit-content;
+}
+#window2 .wincontent {
+    /* overflow: scroll !important; */
+    width: 450px;
+    height: 300px;
+}
+#window4 .wincontent {
     width: 500px;
     height: 350px;
 }
-@media (any-pointer: coarse) {
+.note {
+    overflow-y: scroll !important;
+}
+@media (any-pointer: coarse){
+  .ui-resizable-handle {
+    visibility: hidden;
+  }
+  html, body, #desktop {
+    position: relative !important;
+    display: flex !important;
+    overflow-y: scroll !important;
+    width: 100vw;
+  }
+  .desktop {
+    display: flex !important;
+    flex-grow: 1 !important;
+    flex-direction: column-reverse !important;
+    align-items: flex-end !important;
+    height: fit-content !important;
+    overflow-x: hidden !important;
+    overflow-y: scroll !important;
+    width: 100vw;
+  }
+  .window {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    width: 100vw !important;
+    height: fit-content !important;
+    position: relative !important;
+    top: 0px !important;
+    left: 0px !important;
+    border: 0px !important;
+  }
+  /* #window0 {
+    top: 5px !important;
+  }
+  #window1 {
+    top: 4px !important;
+  }
+  #window2 {
+    top: 3px !important;
+  }
+  #window3 {
+    top: 0px !important;
+  }
+  #window4 {
+    top: 0px !important;
+  } */
+  .wincontent {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-grow: 1 !important;
+    width: inherit !important;
+    position: relative !important;
+    width: calc(100vw - 28px) !important;
+    height: fit-content !important;
+    width: calc(100vw - 28px) !important;
+  }
+  /* #window0 .wincontent, #window1 .wincontent, #window2 .wincontent, #window3 .wincontent, #window4 .wincontent {
+    width: 100% !important;
+  }
+  #window4 {	top: 0px; left: 0px; width: -webkit-fill-available; height: fit-content; position: fixed;	}
+	#window3 {	top: 0px !important; left: 0px; width: -webkit-fill-available; height: fit-content; position: fixed;	}
+	#window2 {	top: 467px !important; left: 0px; width: -webkit-fill-available; height: fit-content;	position: fixed;	}
+	#window1 {	top: 815px !important; left: 0px; width: -webkit-fill-available; height: fit-content;	position: fixed;	}
+  #window0 {	top: 815px !important; left: 0px; width: -webkit-fill-available; height: fit-content;	position: fixed;	}
+  #desktop {	overflow: scroll !important;	}
+	#window2 .wincontent {	width: -webkit-fill-available; height: fit-content;	}
+	#window1 .wincontent {	width: -webkit-fill-available; height: fit-content;	}
+	#window0 .wincontent {	width: -webkit-fill-available; height: fit-content;	}
+	.window {	position: relative;	} */
+  .wincontent img {
+    position: relative !important;
+    /* float: center !important; */
+    width: calc(100vw - 28px) !important;
+  }
+  .note .sig {
+    padding: 0px !important;
+  }
+}
+/* @media (any-pointer: coarse) {
 	#window2 {	top: 0px; left: 0px; width: -webkit-fill-available; height: fit-content; position: absolute;	}
 	#window0 {	top: 467px; left: 0px; width: -webkit-fill-available; height: fit-content;	position: absolute;	}
 	#window1 {	top: 815px; left: 0px; width: -webkit-fill-available; height: fit-content;	position: absolute;	}
 	#desktop {	overflow: scroll;	}
 	#window2 .wincontent {	width: -webkit-fill-available; height: fit-content;	}
-	#window1 .wincontent {	width: -webkit-fill-available; height: fit-content;	}
-	#window0 .wincontent {	width: -webkit-fill-available; height: fit-content;	}
-	.window {	position: relative;	}
+} */
+
+ul {
+  margin-left: 0.5em;
+  line-height: 1.5em;
+}
+
+a {
+  font-weight: 450;
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  padding-top: 0.05em;
+  padding-bottom: 0.05em;
+}
+a:hover {
+  background-color: black;
+  font-weight: 450;
+  color: white;
+  text-decoration: none;
+  padding-left: 0.15em;
+  padding-right: 0.15em;
+  padding-top: 0.05em;
+  padding-bottom: 0.05em;
+  position: relative;
+}
+.flipflops {
+  font-weight: 900;
+  font-size: inherit;
+  color: var(--black);
+  margin: 0px 0px 0px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: var(--blue);
+  text-decoration-skip-ink: auto;
+  text-decoration-thickness: calc(1rem / 3);
+  font-style: italic;
+  font-family: var(--font-family-serif);
 }

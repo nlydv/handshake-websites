@@ -1,0 +1,27 @@
+/* ┏━━━━━━━━━━━━━━━━━━━━┓ */
+/* ┃     Neel Yadav     ┃ */
+/* ┃     03.14.2020     ┃ */
+/* ┗━━━━━━━━━━━━━━━━━━━━┛ */
+
+@import url('/assets/fonts/Aktiv-Grotesk/aktiv-grotesk.css');
+@import url('/assets/fonts/Inter/inter.css');
+@import url('/assets/fonts/InterDisplay/inter-display.css');
+@import url('/assets/fonts/Menlo/menlo.css');
+@import url('/assets/fonts/Sentinel/sentinel.css');
+
+:root {
+  --sans-serif: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --sans-serif-display: InterDisplay, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --monospace: Menlo, SFMono-Regular, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --serif: "Sentinel", serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    --sans-serif: 'Inter var experimental', 'Inter var', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --sans-serif-display: 'InterDisplay var experimental','InterDisplay var', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--sans-serif-display);
+}
