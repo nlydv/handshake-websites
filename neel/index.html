@@ -1,246 +1,232 @@
-<html xmlns="http://www.w3.org/1999/xhtml"><!--
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--
     Modified from the Debian original for Ubuntu
     Last updated: 2016-11-16
     See: https://launchpad.net/bugs/1288690
-  --><head>
+  -->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>neel/</title>
     <meta name="author" content="Neel Yadav">
-    <meta name="description" content="The .neel top-level domain is under the complete control of the true and rightful Neel for private use only. If it so pleases Him, and requisite an oath of fealty, any other persons known as Neel may be bestowed subdominion in exchange for a reasonable supply of troops and armaments.">
+    <meta name="description"
+        content="The .neel top-level domain is under the complete control of the true and rightful Neel for private use only. If it so pleases Him, and requisite an oath of fealty, any other persons known as Neel may be bestowed subdominion in exchange for a reasonable supply of troops and armaments.">
     <meta name="keywords" content="TLD, Name, Domain, Blog, Personal, Handshake, Neel, Yadav">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="canonical" href="http://neel/">
     <link rel="author" href="http://neelyadav/">
+    <link rel="icon" href="icon.svg">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="icon" href="icon.png">
+    <meta name="robots" content="index,follow">
     <style type="text/css" media="screen">
-  * {
-    margin: 0px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
-  }
+        * {
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+        }
 
-  body, html {
-    padding: 3px 3px 3px 3px;
+        body,
+        html {
+            padding: 3px 3px 3px 3px;
+            background-color: #D8DBE2;
+            font-family: Verdana, sans-serif;
+            font-size: 11pt;
+            text-align: center;
+        }
 
-    background-color: #D8DBE2;
+        body {
+            display: flex;
+            align-items: center;
+        }
 
-    font-family: Verdana, sans-serif;
-    font-size: 11pt;
-    text-align: center;
-  }
+        div.main_page {
+            position: relative;
+            display: table;
+            width: 800px;
+            margin: auto;
+            padding: 0px 0px 0px 0px;
+            border-width: 2px;
+            border-color: #212738;
+            border-style: solid;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
 
-  div.main_page {
-    position: relative;
-    display: table;
+        div.page_header {
+            height: 99px;
+            width: 100%;
 
-    width: 800px;
+            background-color: #F5F6F7;
+        }
 
-    margin-bottom: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 0px 0px 0px;
+        div.page_header span {
+            margin: 15px 0px 0px 50px;
 
-    border-width: 2px;
-    border-color: #212738;
-    border-style: solid;
+            font-size: 180%;
+            font-weight: bold;
+        }
 
-    background-color: #FFFFFF;
+        div.page_header img {
+            margin: 3px 0px 0px 40px;
 
-    text-align: center;
-  }
+            border: 0px 0px 0px;
+        }
 
-  div.page_header {
-    height: 99px;
-    width: 100%;
+        div.table_of_contents {
+            clear: left;
 
-    background-color: #F5F6F7;
-  }
+            min-width: 200px;
 
-  div.page_header span {
-    margin: 15px 0px 0px 50px;
+            margin: 3px 3px 3px 3px;
 
-    font-size: 180%;
-    font-weight: bold;
-  }
+            background-color: #FFFFFF;
 
-  div.page_header img {
-    margin: 3px 0px 0px 40px;
+            text-align: left;
+        }
 
-    border: 0px 0px 0px;
-  }
+        div.table_of_contents_item {
+            clear: left;
 
-  div.table_of_contents {
-    clear: left;
+            width: 100%;
 
-    min-width: 200px;
+            margin: 4px 0px 0px 0px;
 
-    margin: 3px 3px 3px 3px;
+            background-color: #FFFFFF;
 
-    background-color: #FFFFFF;
+            color: #000000;
+            text-align: left;
+        }
 
-    text-align: left;
-  }
+        div.table_of_contents_item a {
+            margin: 6px 0px 0px 6px;
+        }
 
-  div.table_of_contents_item {
-    clear: left;
+        div.content_section {
+            margin: 3px 3px 3px 3px;
 
-    width: 100%;
+            background-color: #FFFFFF;
 
-    margin: 4px 0px 0px 0px;
+            text-align: left;
+        }
 
-    background-color: #FFFFFF;
+        div.content_section_text {
+            padding: 4px 8px 4px 8px;
 
-    color: #000000;
-    text-align: left;
-  }
+            color: #000000;
+            font-size: 100%;
+        }
 
-  div.table_of_contents_item a {
-    margin: 6px 0px 0px 6px;
-  }
+        div.content_section_text pre {
+            margin: 8px 0px 8px 0px;
+            padding: 8px 8px 8px 8px;
 
-  div.content_section {
-    margin: 3px 3px 3px 3px;
+            border-width: 1px;
+            border-style: dotted;
+            border-color: #000000;
 
-    background-color: #FFFFFF;
+            background-color: #F5F6F7;
 
-    text-align: left;
-  }
+            font-style: italic;
+        }
 
-  div.content_section_text {
-    padding: 4px 8px 4px 8px;
+        div.content_section_text p {
+            margin-bottom: 6px;
+        }
 
-    color: #000000;
-    font-size: 100%;
-  }
+        div.content_section_text ul,
+        div.content_section_text li {
+            padding: 4px 8px 4px 16px;
+        }
 
-  div.content_section_text pre {
-    margin: 8px 0px 8px 0px;
-    padding: 8px 8px 8px 8px;
+        div.section_header {
+            padding: 3px 6px 3px 6px;
 
-    border-width: 1px;
-    border-style: dotted;
-    border-color: #000000;
+            background-color: #8E9CB2;
 
-    background-color: #F5F6F7;
+            color: #FFFFFF;
+            font-weight: bold;
+            font-size: 112%;
+            text-align: center;
+        }
 
-    font-style: italic;
-  }
+        div.section_header_red {
+            background-color: #CD214F;
+        }
 
-  div.content_section_text p {
-    margin-bottom: 6px;
-  }
+        div.section_header_grey {
+            background-color: #9F9386;
+        }
 
-  div.content_section_text ul, div.content_section_text li {
-    padding: 4px 8px 4px 16px;
-  }
+        .floating_element {
+            position: relative;
+            float: left;
+        }
 
-  div.section_header {
-    padding: 3px 6px 3px 6px;
+        div.table_of_contents_item a,
+        div.content_section_text a {
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    background-color: #8E9CB2;
+        div.table_of_contents_item a:link,
+        div.table_of_contents_item a:visited,
+        div.table_of_contents_item a:active {
+            color: #000000;
+        }
 
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 112%;
-    text-align: center;
-  }
+        div.table_of_contents_item a:hover {
+            background-color: #000000;
 
-  div.section_header_red {
-    background-color: #CD214F;
-  }
+            color: #FFFFFF;
+        }
 
-  div.section_header_grey {
-    background-color: #9F9386;
-  }
+        div.content_section_text a:link,
+        div.content_section_text a:visited,
+        div.content_section_text a:active {
+            background-color: #DCDFE6;
 
-  .floating_element {
-    position: relative;
-    float: left;
-  }
+            color: #000000;
+        }
 
-  div.table_of_contents_item a,
-  div.content_section_text a {
-    text-decoration: none;
-    font-weight: bold;
-  }
+        div.content_section_text a:hover {
+            background-color: #000000;
 
-  div.table_of_contents_item a:link,
-  div.table_of_contents_item a:visited,
-  div.table_of_contents_item a:active {
-    color: #000000;
-  }
+            color: #DCDFE6;
+        }
 
-  div.table_of_contents_item a:hover {
-    background-color: #000000;
+        .logo img:hover {
+            filter: invert(27%) sepia(40%) saturate(5327%) hue-rotate(329deg) brightness(81%) contrast(98%);
+        }
 
-    color: #FFFFFF;
-  }
-
-  div.content_section_text a:link,
-  div.content_section_text a:visited,
-   div.content_section_text a:active {
-    background-color: #DCDFE6;
-
-    color: #000000;
-  }
-
-  div.content_section_text a:hover {
-    background-color: #000000;
-
-    color: #DCDFE6;
-  }
-
-  div.validator {
-  }
+        div.validator {}
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="main_page">
-      <div class="page_header floating_element">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 1236" alt="Neel Yadav" style="width: 15%;">
-  <path class="path" d="M937.19,0V1236h498.5V730.61L937.19,0M2000,0V1236H1501.5V730.61L2000,0M65.8,428v808H871.39ZM871.39,874,66,66.21,0,0H871.39Z"></path> </svg>
-      </div>
-
-      <div class="content_section floating_element">
-
-
-        <div class="section_header section_header_red">
-          <div id="about"></div>hey there, friend.
-</div>
-        <div class="content_section_text">
-          <p>You found your way to my own personal slice of the world wide web.</p><p>There isn't much to do here, perhaps that will change soon though. I plan on making good use of this digital space from scratch, on my own. Until then however, you'll have to track me down elsewhere on the information superhighway to know more.</p>
-
-
-          
-
+        <div class="page_header floating_element">
+            <a class="logo" href="http://neelyadav/" style="height: inherit">
+                <img src="https://files.neelyadav.com/logo/clear-black.svg" alt="http://neelyadav/" style="height: inherit; margin:0 !important;">
+            </a>
         </div>
-        <div class="section_header">
-          <div id="changes"></div>this is just a placeholder webpage</div>
-        <div class="content_section_text">
-          <p><b>thanks for stopping by!</b></p>
-          <p>here are some other handshake TLDs I own that have webpages:</p>
-          
-          <ul>
-    <li><a href="http://neelyadav">neelyadav/</a></li>
-    <li><a href="http://truedata">truedata/</a></li>
-    <li><a href="http://grandview">grandview/</a></li>
-    <li><a href="http://flops">flops/</a></li>
-</ul>
+        <div class="content_section floating_element">
+            <div class="section_header section_header_red" style="font-size:145%;">
+                <div id="about"></div>Registration Details<br>for <span style="font-family:monospace; font-weight:normal; font-size:110%;">.neel</span> Domains
+            </div>
+            <div class="content_section_text" style="margin:2.5em 0em;">
+                <p style="font-family: monospace; font-weight: bold; text-transform: uppercase; color: #CD214F; margin: 1em 1em 1em 1em; padding: 0 !important; text-align: justify; font-size: 125%;">The .neel top-level domain is under the complete control of the one and only true and rightful Neel. At this time it is reserved for private use only.<br><br><br>However, if it so pleases Him, and requisite an oath of fealty, any other persons known as Neel may be bestowed a subdominion within the greater realm in exchange for a reasonable supply of coin as well as an adequate amount of armaments and battle-ready troops when called upon in times of war.</p>
+            </div>
+            <div class="section_header" style="font-size:100%;">
+                <div id="changes"></div> other owned TLDs with webpages
+            </div>
+            <div class="content_section_text" style="text-align:center; display:flex; flex-direction:column; justify-items:space-around; align-self:center; margin:2.5em 0em;">
+                <ul style="list-style-type: none; font-size: 125%; display:flex; flex-direction:row; justify-content:space-between; align-self:center; width:-webkit-fill-available;">
+                    <li><a href="http://neelyadav">neelyadav/</a></li>
+                    <li><a href="http://truedata">truedata/</a></li>
+                    <li><a href="http://grandview">grandview/</a></li>
+                    <li><a href="http://flops">flops/</a></li>
+                </ul>
+            </div>
         </div>
-
-        
-
-        
-
-        
-        
-
-
-
-
-      </div>
     </div>
-    
-  
-
-
-
-</body></html>
+</body>
+</html>
