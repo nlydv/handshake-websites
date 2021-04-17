@@ -1,3 +1,3 @@
 [submodule "flip.flops"]
 	path = flip.flops
-	url = https://github.com/nlydv/flip.flops
+	url = git@github.com:nlydv/flip.flops.git
